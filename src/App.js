@@ -1,26 +1,20 @@
+//TIRSDAGS OPGAVERNE 
+
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import upper, { text1, text2, text3 } from "./File1";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Tirsdags opgave</h1>
+      <p>{upper("please uppercase me test, test, test")}</p>
+      <p>{text1}</p>
+      <p>{text2}</p>
+      <p>{text3}</p>
     </div>
   );
 }
 
 export default App;
+
