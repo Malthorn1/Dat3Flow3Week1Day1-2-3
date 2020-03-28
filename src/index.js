@@ -9,6 +9,7 @@ import ListDemoApp from "./ListDemoApp";
 import ListDemoApp2 from "./ListDemoApp2";
 import FormDemo from "./FormDemo.js";
 import FormDemoMultiple from "./FormDemoMultiple.js";
+import AppTorsLift from "./AppTorsLift.js"; 
 
 let app = <App />;
 
@@ -45,6 +46,10 @@ const DontUseMeForReal = () => {
       &nbsp;
       <a href="/" className="x" id="FormDemoMultiple">
       FormDemoMultiple
+      </a>{" "}
+      &nbsp;
+      <a href="/" className="x" id="AppTorsLift">
+      AppTorsLift
       </a>{" "}
       &nbsp;
       {/* Add as many as you have exercises, but remember className="x" */}
@@ -84,6 +89,9 @@ function handleSelect(event) {
       case "FormDemoMultiple":
         app = <FormDemoMultiple />;
         break;
+        case "AppTorsLift":
+          app = <AppTorsLift />;
+          break;
   }
   ReactDOM.render(<DontUseMeForReal />, document.getElementById("root"));
 }
